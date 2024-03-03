@@ -1,4 +1,4 @@
-name: Terraform Destroy
+name: Terraform Destroy K8
 
 on:
   workflow_dispatch: # Permite executar o workflow manualmente
