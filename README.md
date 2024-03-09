@@ -3,6 +3,11 @@ Este repositório é dedicado à infra Kubernetes com Terraform, com a finalidad
 
 O deploy de todos os recursos é realizado pelo Github Actions a partir dos arquivos Terraform.
 
+## 🖥️ Grupo 13 - Integrantes
+🧑🏻‍💻 *<b>RM352133</b>*: Eduardo de Jesus Coruja </br>
+🧑🏻‍💻 *<b>RM352316</b>*: Eraldo Antonio Rodrigues </br>
+🧑🏻‍💻 *<b>RM352032</b>*: Luís Felipe Amengual Tatsch </br>
+
 Construímos toda infraestrutura serverless com Fargate, ECS e ECR. 
 
 Criamos um cluster no ECS, o qual contém a service e a task:
