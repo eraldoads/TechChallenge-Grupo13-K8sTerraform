@@ -1,4 +1,4 @@
-# TechChallenge-Grupo13-Terraform
+# TechChallenge-Grupo13-K8sTerraform
 Este repositório é dedicado à infra Kubernetes com Terraform, com a finalidade de incorporar aprimoramentos baseados nas melhores práticas de CI/CD para a API.
 
 Construímos toda infraestrutura serverless com Fargate, ECS e ECR:
