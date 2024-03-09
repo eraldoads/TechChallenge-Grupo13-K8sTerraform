@@ -59,7 +59,6 @@ variable "AWSAccount" {
   default = "399256494712"
 }
 
-
 variable "tags" {
   type = map(string)
   default = {
