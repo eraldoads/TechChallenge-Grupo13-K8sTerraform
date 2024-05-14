@@ -1,5 +1,5 @@
-resource "aws_lb_target_group" "tg" {
-  name        = "TG-${var.projectName}"
+resource "aws_lb_target_group" "tg_monolito" {
+  name        = "tg-monolito"
   port        = 80
   protocol    = "HTTP"
   target_type = "ip"

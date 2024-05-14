@@ -1,9 +1,9 @@
-resource "aws_ecs_task_definition" "task" {
-  family = "TSK-${var.projectName}"
+resource "aws_ecs_task_definition" "task_monolito" {
+  family = "tsk-monolito"
   container_definitions = jsonencode([
     {
       essential = true,
-      image     = "${aws_ecr_repository.repository.repository_url}:latest"
+      image     = "${aws_ecr_repository.repository_cliente.repository_url}:latest"
       environment = [
         {
           name  = "ASPNETCORE_ENVIRONMENT"
@@ -45,12 +45,12 @@ resource "aws_ecs_task_definition" "task" {
       logConfiguration = {
         logDriver = "awslogs"
         options = {
-          awslogs-group         = "${aws_cloudwatch_log_group.cloudwatch-log-group.name}"
+          awslogs-group         = "${aws_cloudwatch_log_group.cloudwatch-log-group-monolito.name}"
           awslogs-region        = "${var.regionDefault}"
           awslogs-stream-prefix = "ecs"
         }
       }
-      name = var.projectName
+      name = "monolito"
       portMappings = [
         {
           containerPort = 80
