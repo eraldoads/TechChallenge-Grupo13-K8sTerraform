@@ -3,7 +3,7 @@ resource "aws_ecs_task_definition" "task_monolito" {
   container_definitions = jsonencode([
     {
       essential = true,
-      image     = "${aws_ecr_repository.repository_cliente.repository_url}:latest"
+      image     = "${aws_ecr_repository.repository_monolito.repository_url}:latest"
       environment = [
         {
           name  = "ASPNETCORE_ENVIRONMENT"
