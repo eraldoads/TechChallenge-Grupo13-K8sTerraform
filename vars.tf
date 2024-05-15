@@ -24,6 +24,36 @@ variable "rdsPass" {
   default = "fastfood"
 }
 
+variable "dbNameCliente" {
+  type    = string
+  default = "BD_PKFF_CLIENTES"
+}
+
+variable "rdsUserCliente" {
+  type    = string
+  default = "pkcliente"
+}
+
+variable "rdsPassCliente" {
+  type    = string
+  default = "Fast.FoodCli"
+}
+
+variable "dbNameProduto" {
+  type    = string
+  default = "BD_PKFF_PRODUTOS"
+}
+
+variable "rdsUserProduto" {
+  type    = string
+  default = "pkproduto"
+}
+
+variable "rdsPassProduto" {
+  type    = string
+  default = "Fast.FoodProd"
+}
+
 variable "clusterName" {
   type    = string
   default = "piklesCluster"
