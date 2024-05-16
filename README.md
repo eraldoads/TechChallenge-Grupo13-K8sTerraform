@@ -16,12 +16,19 @@ Criamos um cluster no ECS, o qual contém as services e as tasks de cada aplica�
 
 ![image](https://github.com/eraldoads/TechChallenge-Grupo13-K8sTerraform/assets/47857203/948b9470-fa00-4f28-af7a-c6182001745f)
 
+E para cada aplicação, criamos um load balancer para receber as requisições e as direcionar para a respectiva service:
 
-Criamos um Load Balancer para receber as requisições e as direciona para a service:
+![image](https://github.com/eraldoads/TechChallenge-Grupo13-K8sTerraform/assets/47857203/fc019b94-33bf-4682-8ce6-d3d4713b6d79)
+
+O desenho abaixo ilustra a arquitetura utilizada. No exemplo, temos duas aplicações, as quais podem ser dois microsserviços, sendo que um utiliza o banco MySQL no RDS da Amazon e o outro utiliza o MongoDB Atlas:
+
+![image](https://github.com/eraldoads/TechChallenge-Grupo13-K8sTerraform/assets/47857203/97206cef-7e8a-459d-a2c0-5b552974d330)
 
 
 
-O container criado pela task aponta para a imagem no ECR:
+
+
+
 
 
 
