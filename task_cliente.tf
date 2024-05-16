@@ -19,31 +19,7 @@ resource "aws_ecs_task_definition" "task_cliente" {
         {
           name  = "ConnectionStrings__ConnectionMysql"
           value = "server=${data.aws_db_instance.database.address};port=3306;userid=${var.rdsUserCliente};password=${var.rdsPassCliente};database=${var.dbNameCliente};"
-        },
-        {
-          name  = "MERCADO_PAGO_BASE_URL"
-          value = "https://api.mercadopago.com"
-        },
-        {
-          name  = "MERCADO_PAGO_CRIAR_QR_ORDER_PATH"
-          value = "/instore/orders/qr/seller/collectors/1619908702/pos/SUC001POS001/qrs"
-        },
-        {
-          name  = " MERCADO_PAGO_CONSULTAR_QR_ORDER_PATH"
-          value = "/merchant_orders/{0}"
-        },
-        {
-          name  = "MERCADO_PAGO_AUTHORIZATION"
-          value = "Bearer TEST-1380797655451164-010212-2bb955330b75683baa093d93183e0c2e-1619908702"
-        },
-        {
-          name  = "MERCADO_PAGO_SPONSOR_ID"
-          value = "58923039"
-        },
-        {
-          name  = "WEBHOOK_ENDPOINT"
-          value = "https://webhook.site/d3f4d936-e976-4f97-8dbc-11e8b4a27341"
-        }
+        }        
       ],
       logConfiguration = {
         logDriver = "awslogs"

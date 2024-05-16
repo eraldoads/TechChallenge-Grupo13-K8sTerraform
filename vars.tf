@@ -54,6 +54,16 @@ variable "rdsPassProduto" {
   default = "Fast.FoodProd"
 }
 
+variable "mgUserPagamento" {
+  type    = string
+  default = "pkpagamento"
+}
+
+variable "mgPassPagamento" {
+  type    = string
+  default = "Fast.FoodMongo"
+}
+
 variable "clusterName" {
   type    = string
   default = "piklesCluster"
