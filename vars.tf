@@ -61,7 +61,7 @@ variable "mgUserPagamento" {
 
 variable "mgPassPagamento" {
   type    = string
-  default = "Fast.FoodMongo"
+  default = "Fast.FoodPgto"
 }
 
 variable "clusterName" {
