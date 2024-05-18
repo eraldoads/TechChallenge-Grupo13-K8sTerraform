@@ -18,7 +18,7 @@ resource "aws_ecs_task_definition" "task_pagamento" {
         },
         {
           name  = "ConnectionStrings__ConnectionMongoDB"
-          value = "mongodb+srv://${var.mgUserPagamento}:${var.mgPassPagamento}@piklesfastfood-dev-clus.btocx.mongodb.net/"                   
+          value = "mongodb+srv://${var.mgUserPagamento}:${var.mgPassPagamento}@piklesfastfood-dev-clus.ve3vp.mongodb.net/"
         },
         {
           name  = "MERCADO_PAGO_BASE_URL"
