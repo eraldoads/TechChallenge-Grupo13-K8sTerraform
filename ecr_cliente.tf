@@ -1,5 +1,5 @@
-resource "aws_ecr_repository" "repository" {
-  name                 = "ecr-${var.projectName}"
+resource "aws_ecr_repository" "repository_cliente" {
+  name                 = "ecr-cliente"
   image_tag_mutability = "MUTABLE"
 
   image_scanning_configuration {
@@ -7,8 +7,8 @@ resource "aws_ecr_repository" "repository" {
   }
 }
 
-resource "aws_ecr_repository_policy" "repository-policy" {
-  repository = aws_ecr_repository.repository.name
+resource "aws_ecr_repository_policy" "repository-policy_cliente" {
+  repository = aws_ecr_repository.repository_cliente.name
 
   policy = <<EOF
     {
@@ -40,8 +40,8 @@ resource "aws_ecr_repository_policy" "repository-policy" {
     EOF
 }
 
-resource "aws_ecr_lifecycle_policy" "repository-lifecycle" {
-  repository = aws_ecr_repository.repository.name
+resource "aws_ecr_lifecycle_policy" "repository-lifecycle-cliente" {
+  repository = aws_ecr_repository.repository_cliente.name
 
   policy = <<EOF
     {

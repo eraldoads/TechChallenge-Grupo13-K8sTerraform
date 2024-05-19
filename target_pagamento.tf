@@ -1,6 +1,6 @@
-resource "aws_lb_target_group" "tg" {
-  name        = "TG-${var.projectName}"
-  port        = 80
+resource "aws_lb_target_group" "tg_pagamento" {
+  name        = "tg-pagamento"
+  port        = 8080
   protocol    = "HTTP"
   target_type = "ip"
 
@@ -8,7 +8,7 @@ resource "aws_lb_target_group" "tg" {
 
   health_check {
     path    = "/"
-    port    = 80
+    port    = 8080
     matcher = "200"
   }
 }
