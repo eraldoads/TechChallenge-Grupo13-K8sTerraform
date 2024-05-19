@@ -3,8 +3,8 @@ name: Deploy na AWS com Terraform
 on:
   push:
     branches:
-      - main
       - homolog
+      - main      
 
 jobs:
   deploy:
