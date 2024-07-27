@@ -76,7 +76,7 @@ variable "mgUserPagamento" {
 
 variable "mgPassPagamento" {
   type    = string
-  default = "Fast.FoodPagamento"
+  default = "Fast.FoodPgto"
 }
 
 variable "clusterName" {

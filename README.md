@@ -10,13 +10,14 @@ O deploy de todos os recursos é realizado pelo Github Actions a partir dos arqu
 
 Construímos toda infraestrutura serverless com Fargate, ECS e ECR. 
 
-Criamos um cluster no ECS, o qual contém as services e as tasks de cada aplicação:
+Criamos um cluster no ECS, o qual contém as services e as tasks de cada aplicação. 
+No momento, temos três microsserviços que foram desmembrados do monolito e o monolito em si, totalizando quatro aplicações.
 
 ![image](https://github.com/eraldoads/TechChallenge-Grupo13-K8sTerraform/assets/47857203/4c6e390d-86ee-41e5-9963-88de03449c3d)
 
 ![image](https://github.com/eraldoads/TechChallenge-Grupo13-K8sTerraform/assets/47857203/948b9470-fa00-4f28-af7a-c6182001745f)
 
-E para cada aplicação, criamos um load balancer para receber as requisições e as direcionar para a respectiva service:
+Para cada aplicação, criamos um load balancer para receber as requisições e as direcionar para a respectiva service:
 
 ![image](https://github.com/eraldoads/TechChallenge-Grupo13-K8sTerraform/assets/47857203/fc019b94-33bf-4682-8ce6-d3d4713b6d79)
 
