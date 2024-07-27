@@ -123,7 +123,7 @@ variable "tags" {
 
 variable "rabbit_hostname" {
   type    = string
-  default = "b-2e3cc774-1b4b-430c-aeb6-e56fbd0bdcff.mq.us-east-1.amazonaws.com"
+  default = "b-f9780f9f-bb44-4322-98a3-0de187aa2022.mq.us-east-1.amazonaws.com"
 }
 
 variable "rabbit_username" {
