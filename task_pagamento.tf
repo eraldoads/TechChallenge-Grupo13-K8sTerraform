@@ -21,6 +21,10 @@ resource "aws_ecs_task_definition" "task_pagamento" {
           value = "mongodb+srv://${var.mgUserPagamento}:${var.mgPassPagamento}@piklesfastfood-dev-clus.pvhss.mongodb.net/"
         },
         {
+          name  = "databaseName"
+          value = "PagamentoDB"
+        },
+        {
           name  = "MERCADO_PAGO_BASE_URL"
           value = "https://api.mercadopago.com"
         },
