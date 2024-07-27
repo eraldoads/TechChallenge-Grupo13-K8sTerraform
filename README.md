@@ -21,9 +21,10 @@ Para cada aplicação, criamos um load balancer para receber as requisições e 
 
 ![image](https://github.com/eraldoads/TechChallenge-Grupo13-K8sTerraform/assets/47857203/fc019b94-33bf-4682-8ce6-d3d4713b6d79)
 
-O desenho abaixo ilustra a arquitetura utilizada. No exemplo, temos duas aplicações, as quais podem ser dois microsserviços, sendo que um utiliza o banco MySQL no RDS da Amazon e o outro utiliza o MongoDB Atlas:
+O desenho abaixo ilustra a arquitetura utilizada, abrangendo os microsserviços e suas conexões com os bancos de dados e o broker de mensageria:
 
-![image](https://github.com/eraldoads/TechChallenge-Grupo13-K8sTerraform/assets/47857203/97206cef-7e8a-459d-a2c0-5b552974d330)
+![image](https://github.com/user-attachments/assets/40cdd30d-7783-49ed-a563-ef9697e7173b)
+
 
 
 
