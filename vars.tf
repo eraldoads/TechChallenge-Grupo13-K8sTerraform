@@ -54,6 +54,21 @@ variable "rdsPassProduto" {
   default = "Fast.FoodProd"
 }
 
+variable "dbNamePedido" {
+  type    = string
+  default = "BD_PKFF_PEDIDOS"
+}
+
+variable "rdsUserPedido" {
+  type    = string
+  default = "pkpedido"
+}
+
+variable "rdsPassPedido" {
+  type    = string
+  default = "Fast.FoodPed"
+}
+
 variable "mgUserPagamento" {
   type    = string
   default = "pkpagamento"
@@ -106,8 +121,18 @@ variable "tags" {
   }
 }
 
+variable "rabbit_hostname" {
+  type    = string
+  default = "b-f9780f9f-bb44-4322-98a3-0de187aa2022.mq.us-east-1.amazonaws.com"
+}
 
+variable "rabbit_username" {
+  type    = string
+  default = "piklesrabbit"
+}
 
-
-
+variable "rabbit_password" {
+  type    = string
+  default = "Fast.FoodRabbitMQ"
+}
 

@@ -18,7 +18,11 @@ resource "aws_ecs_task_definition" "task_pagamento" {
         },
         {
           name  = "ConnectionStrings__ConnectionMongoDB"
-          value = "mongodb+srv://${var.mgUserPagamento}:${var.mgPassPagamento}@piklesfastfood-dev-clus.ve3vp.mongodb.net/"
+          value = "mongodb+srv://${var.mgUserPagamento}:${var.mgPassPagamento}@piklesdev.frtwzhj.mongodb.net/"
+        },
+        {
+          name  = "databaseName"
+          value = "PagamentoDB"
         },
         {
           name  = "MERCADO_PAGO_BASE_URL"
@@ -42,7 +46,19 @@ resource "aws_ecs_task_definition" "task_pagamento" {
         },
         {
           name  = "WEBHOOK_ENDPOINT"
-          value = "https://webhook.site/d3f4d936-e976-4f97-8dbc-11e8b4a27341"
+          value = "https://webhook.site/cb4c384e-723d-47c1-b540-ac7cc52a7cae"
+        },
+        {
+          name  = "RABBIT_HOSTNAME"
+          value = "${var.rabbit_hostname}"
+        },
+                {
+          name  = "RABBIT_USERNAME"
+          value = "${var.rabbit_username}"
+        },
+                {
+          name  = "RABBIT_PASSWORD"
+          value = "${var.rabbit_password}"
         }
       ],
       logConfiguration = {
